@@ -16,7 +16,7 @@
         autoResize: true,
         sizeHeight: true,
         tolerance: 400,
-        heightCalculationMethod: 'grow',
+        heightCalculationMethod: 'documentElementScroll',
 				resizedCallback         : function(messageData){ // Callback fn when resize is received
           console.log(messageData.iframe.id, messageData.height, messageData.width, messageData.type)
 				}
