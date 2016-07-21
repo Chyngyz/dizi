@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <style>iframe{width:100%}</style>
@@ -13,10 +14,7 @@
 		<script type="text/javascript">
 			iFrameResize({
 				log                     : true,                  // Enable console logging
-        autoResize: true,
-        sizeHeight: true,
-        tolerance: 400,
-        heightCalculationMethod: 'documentElementScroll',
+        heightCalculationMethod: 'documentElementOffset',
 				resizedCallback         : function(messageData){ // Callback fn when resize is received
           console.log(messageData.iframe.id, messageData.height, messageData.width, messageData.type)
 				}
