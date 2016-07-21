@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <style>iframe{width:100%}</style>
+  <iframe src="https://chyngyz.github.io/dizi/" scrolling="no"></iframe>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="iframeResizer.js"></script>
+		<script type="text/javascript">
+			iFrameResize({
+				log                     : true,                  // Enable console logging
+        autoResize: true,
+        sizeHeight: true,
+        tolerance: 400,
+        heightCalculationMethod: 'grow',
+				resizedCallback         : function(messageData){ // Callback fn when resize is received
+          console.log(messageData.iframe.id, messageData.height, messageData.width, messageData.type)
+				}
+			});
+		</script>
+</body>
+</html>
