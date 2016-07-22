@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket widget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-touch-fullscreen" content="yes" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,300,600,400&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+  <style>
+    html, body {
+      height: auto!important;
+    }
+    .header {
+      /*height: 290px !important;
+      margin-bottom: 50px;*/
+      height: 150px !important;
+      margin-bottom: 0;
+      margin: 50px auto 10px !important;
+    }
+    .search-form-outer {
+      position: static !important;
+      transform: translate(0) !important;
+      -webkit-transform: translate(0) !important;
+      -moz-transform: translate(0) !important;
+      -ms-transform: translate(0) !important;
+    }
+    .navbar-fixed-top.main-nav {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="etm_system_widget_outer" wid="f4db656f34" service="https://crm.etm-system.com/site" ng-app="etmWidgetApp"></div>
+  <script type="text/javascript" src="https://crm.etm-system.com/site/build/js/widget-builded.js"></script>
+  <script type="text/javascript" src="iframeResizer.contentWindow.js"></script>
+</body>
+
+</html>

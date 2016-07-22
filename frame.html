@@ -7,18 +7,27 @@
 </head>
 <body>
   <style>iframe{width:100%}</style>
+
+
+  <!-- нужно добавить это, потом как обнавят diza.concept.kg поменяем на нее -->
   <iframe src="https://chyngyz.github.io/dizi/" scrolling="no"></iframe>
+  <!-- конец -->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script type="text/javascript" src="iframeResizer.js"></script>
-		<script type="text/javascript">
-			iFrameResize({
-				log                     : true,                  // Enable console logging
-        heightCalculationMethod: 'documentElementOffset',
-				resizedCallback         : function(messageData){ // Callback fn when resize is received
-          console.log(messageData.iframe.id, messageData.height, messageData.width, messageData.type)
-				}
-			});
-		</script>
+
+
+  <!-- нужно добавить это -->
+	<script type="text/javascript" src="iframeResizer.js"></script>
+	<script type="text/javascript">
+		iFrameResize({
+			log                     : true,                  // Enable console logging
+      heightCalculationMethod: 'documentElementOffset',
+			resizedCallback         : function(messageData){ // Callback fn when resize is received
+        console.log(messageData.iframe.id, messageData.height, messageData.width, messageData.type)
+			}
+		});
+	</script>
+  <!-- конец -->
+  
 </body>
 </html>
